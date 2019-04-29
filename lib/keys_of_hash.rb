@@ -3,7 +3,8 @@ class Hash
     keys = []
     self.each do |key, value|
       if arguments.include?(value)
-        keys << value
-      
+        keys << key
+      end
+    end
   end
 end
